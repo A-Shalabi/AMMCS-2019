@@ -1,0 +1,47 @@
+\documentclass[svgnames]{standalone}
+\usepackage{tikz}
+\usepackage{tikz,pgfplots}
+\usepackage{tikz-3dplot}
+\usepackage{rotating}
+\usetikzlibrary{matrix,positioning,arrows,shapes,patterns,fpu}
+\begin{document}
+
+\begin{tikzpicture}
+%grid
+\draw (1,1) grid (5,5);
+%label
+\node[above] at (3,5) {Electrolyte};
+%cations 
+\draw[fill=MediumVioletRed] (1.5,1.5) circle (0.48);
+\draw[fill=MediumVioletRed] (1.5,4.5) circle (0.48);
+\draw[fill=MediumVioletRed] (3.5,1.5) circle (0.48);
+\draw[fill=MediumVioletRed] (2.5,2.5) circle (0.48);
+\draw[fill=MediumVioletRed] (4.5,4.5) circle (0.48);
+%plus signs
+\node[text=white] at (1.5,1.5) {\bf{+}};
+\node[text=white] at (1.5,4.5) {\bf{+}};
+\node[text=white] at (3.5,1.5) {\bf{+}};
+\node[text=white] at (2.5,2.5) {\bf{+}};
+\node[text=white] at (4.5,4.5) {\bf{+}};
+%anions
+\draw[fill=Indigo] (1.5,2.5) circle (0.48);
+\draw[fill=Indigo] (2.5,3.5) circle (0.48);
+\draw[fill=Indigo] (3.5,2.5) circle (0.48);
+\draw[fill=Indigo] (3.5,4.5) circle (0.48);
+\draw[fill=Indigo] (4.5,3.5) circle (0.48);
+%minus signs
+\node[text=white] at (1.5,2.5) {\bf{-}};
+\node[text=white] at (2.5,3.5) {\bf{-}};
+\node[text=white] at (3.5,2.5) {\bf{-}};
+\node[text=white] at (3.5,4.5) {\bf{-}};
+\node[text=white] at (4.5,3.5) {\bf{-}};
+%water
+\draw[fill=LightSkyBlue] (2.5,1.5) circle (0.48);
+\draw[fill=LightSkyBlue] (4.5,1.5) circle (0.48);
+\draw[fill=LightSkyBlue] (3.5,3.5) circle (0.48);
+\draw[fill=LightSkyBlue] (1.5,3.5) circle (0.48);
+\draw[fill=LightSkyBlue] (4.5,2.5) circle (0.48);
+\draw[fill=LightSkyBlue] (2.5,4.5) circle (0.48);
+\end{tikzpicture}
+
+\end{document}
